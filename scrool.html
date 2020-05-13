@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Template</title>
+
+  <!-- bootstrap links  -->
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <!-- custom css  -->
+  <link rel="stylesheet" href="style/main.css">
+
+  <style>
+    .offset {
+      position: fixed;
+      z-index: 200;
+      top: 0;
+      right: 0;
+      width: 200px;
+      height: 50px;
+      background: lime;
+      margin: 20px;
+      border-radius: 5px;
+      text-align: center;
+      line-height: 50px;
+      color: red;
+      font-size: 20px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    ul li {
+      margin-bottom: 30px;
+      border-bottom: 1px solid lightgray;
+      display: block;
+      padding-right: 50px;
+      padding-left: 10px;
+    }
+
+    ul li a {
+      display: inline-block padding:0px;
+      margin: 0px;
+      font-size: 18px;
+      text-transform: capitalize;
+
+    }
+
+    ul li a.section_active {
+      color: black !important
+    }
+
+    ul {
+  
+      margin-left: auto;
+      margin-top: 48px;
+      top:200px;
+    }
+
+    .section_fixed {
+      position: fixed !important;
+      margin-bottom: 30px;
+      display: block;
+      right: 50%;
+    }
+    .sectionlist{
+      position: relative;
+      top:0px
+      
+    }
+  </style>
+
+
+</head>
+
+<body>
+
+  <div class="offset">
+    <span id="scale">0</span>
+  </div>
+  <div class="space"></div>
+  <div class="space"></div>
+
+  <div class="row p-5 container mx-auto mysection" style="margin-bottom:200px">
+
+    <!-- LIST  DIVISION -->
+    <div class="col-12 col-md-6 p-0 d-none d-md-flex ">
+      <div class="sectionlist ml-auto" style="top:41px">
+        <ul>
+          <li><a href="#section1" class="section_active">list 1 alpha </a></li>
+          <li><a href="#section2">section 02 creation </a></li>
+          <li><a href="#section3">section 03 animation of matrix</a></li>
+          <li><a href="#section4">section 04 coloaction page</a></li>
+          <li><a href="#section5">section 05 Azure site recovery page</a></li>
+
+        </div>
+      </ul>
+
+    </div>
+    <!-- CONTENT CONTAINER -->
+    <div class="col-12 col-md-6 p-0">
+      <div id="section1" class="section ">
+        <div class="header bg-danger p-3">
+          <h3 class="header-title text-white"> Section 1 </h3>
+        </div>
+        <div class="bg-light p-5">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi autem, optio odit sint corporis expedita mollitia ratione obcaecati ullam itaque. Ullam aut rem consequuntur, facere temporibus error quos non distinctio.
+        </div>
+      </div>
+      <div id="section2" class="section mt-5">
+        <div class="header bg-primary p-3">
+          <h3 class="header-title text-white"> Section 2 </h3>
+        </div>
+        <div class="bg-light p-5">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi autem, optio odit sint corporis expedita mollitia ratione obcaecati ullam itaque. Ullam aut rem consequuntur, facere temporibus error quos non distinctio.
+        </div>
+      </div>
+      <div id="section3" class="section mt-5">
+        <div class="header bg-success p-3">
+          <h3 class="header-title text-white"> Section 3 </h3>
+        </div>
+        <div class="bg-light p-5">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi autem, optio odit sint corporis expedita mollitia ratione obcaecati ullam itaque. Ullam aut rem consequuntur, facere temporibus error quos non distinctio.
+        </div>
+      </div>
+      <div id="section4" class="section mt-5">
+        <div class="header bg-warning p-3">
+          <h3 class="header-title text-white"> Section 4 </h3>
+        </div>
+        <div class="bg-light p-5">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi autem, optio odit sint corporis expedita mollitia ratione obcaecati ullam itaque. Ullam aut rem consequuntur, facere temporibus error quos non distinctio.
+        </div>
+      </div>
+      <div id="section5" class="section mt-5">
+        <div class="header bg-secondary p-3">
+          <h3 class="header-title text-white"> Section 5 </h3>
+        </div>
+        <div class="bg-light p-5">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi autem, optio odit sint corporis expedita mollitia ratione obcaecati ullam itaque. Ullam aut rem consequuntur, facere temporibus error quos non distinctio.
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="space"></div>
+  <div class="space"></div>
+
+
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/scroll.js"></script>
+
+  <script>
+
+  </script>
+</body>
+
+</html>

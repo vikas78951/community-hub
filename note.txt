@@ -1,0 +1,27 @@
+
+ breakpoint xs  0;
+ breakpoint sm  576px;
+ breakpoint md  768px;
+ breakpoint lg  992px;
+ breakpoint xl  1200px;
+
+semi red -> color:#f11700
+semi dark red ->  color:#e1332d
+image red -> color:#f06242
+
+
+
+
+
+
+
+home page -> area of study , success story , get social and follow us
+bolg ->
+event page ->
+see programs ->online summer program
+student hub ->
+online learning ->
+have a question ->
+education or university news ->
+
+collage location

@@ -1,0 +1,146 @@
+/* NAVBAR CSS  */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10vh;
+  background-color:var(--secondary_background) ;
+  min-height: 50px;
+  box-shadow:0px 2px 11px 0px var(--secondary_shadow);
+  z-index: 1000000000000000000000;
+  transition: .2s linear;
+}
+
+.nav_mask {
+  height: 10vh;
+  min-height: 50px;
+  transition: .2s linear;
+  background-color:var(--secondary_background) ;
+}
+
+nav .Nav_link_container {
+  display: flex;
+  width: 50%;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: auto;
+  list-style: none !important;
+  background-color:var(--secondary_background) ;
+  clip-path: none;
+}
+
+nav .Nav_link_container li a {
+  text-decoration: none !important;
+  color: var(--secondary_text);
+  font-size: 19px;
+  letter-spacing: .1px;
+  font-weight: 600 !important;
+  transition: .1s ease;
+}
+
+nav .Nav_link_container li a:hover {
+  text-decoration: none !important;
+  border-bottom: 3px solid var(--secondary_border);
+}
+
+
+nav .Nav_link_container.open_nav {
+  clip-path: circle(730.201px at 98.9251% 0.431264%);
+  -webkit-clip-path: circle(730.201px at 98.9251% 0.431264%);
+}
+
+.landing {
+  height: 50vh;
+  min-height: 300px;
+  background: var(--secondary_background);
+  position: relative;
+}
+
+.landing .content {}
+
+.landing .header-title {
+  font-size: 50px;
+  color: var(--secondary_text);
+}
+
+.landing .text-title {
+  color: var(--secondary_text);
+  padding: 10px;
+  letter-spacing: .1px;
+  word-spacing: 2px
+}
+
+.register_btn {
+  margin-left: 10px;
+  margin-top: 10px;
+  position: absolute;
+  padding: 8px 50px;
+  border-width: 1px;
+  border-radius: 0px;
+  font-size: 18px;
+  transition: all .3s;
+  font-weight: normal;
+  color: var(--secondary_text);
+  border-color: var(--secondary_border);
+  border-width: 2px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.register_btn:hover {
+  background: var(--secondary_hover_btn);
+  color:var(--secondary_hover_text)
+}
+/* media screen 700 */
+@media screen and (max-width:768px) {
+  nav .Nav_link_container {
+    width: 100%
+  }
+  .landing{
+    height:100%;
+  }
+}
+
+/* media screen 400  */
+@media screen and (max-width:450px) {
+  nav .responsive_nav_button {
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translate(-5%, -50%);
+    cursor: pointer;
+    z-index: 2000;
+  }
+
+  nav .responsive_nav_button .line {
+    height: 4px;
+    width: 30px;
+    background: var(--secondary_hover_btn);
+    margin: 5px;
+    transition: .3s linear
+  }
+
+  nav .responsive_nav_button:hover .line {}
+
+  nav .Nav_link_container {
+    position: fixed;
+    height: 80%;
+    flex-direction: column;
+    clip-path: circle(2.67573px at 98.9251% 0%);
+    -webkit-clip-path: circle(2.67573px at 98.9251% 0%);
+    transition: all .5s ease-out;
+    pointer-events: none;
+    padding-bottom: 100px;
+  }
+
+  nav .Nav_link_container li {
+    transition: .5s linear;
+    opacity: 0;
+  }
+
+  .Nav_link_container li.fade_in {
+    opacity: 1
+  }
+}
